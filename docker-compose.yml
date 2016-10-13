@@ -1,0 +1,14 @@
+version: '2'
+services:
+  grpc:
+      build: ./grpc-server
+      ports:
+          - "50051:50051"
+  http:
+      build: ./http-server
+      ports:
+          - "8080:8080"
+  http2:
+      build: ./http2-server
+      ports:
+          - "3030:3030"

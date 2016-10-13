@@ -8,11 +8,8 @@ RUN npm install
 
 COPY . /usr/src/app
 
-ENV APP_RPC_PORT=50051
 ENV APP_HTTP_PORT=8080
-ENV DEBUG=grpc-hello-server
 
 EXPOSE 8080
-EXPOSE 50051
 
 CMD [ "npm", "start" ]
