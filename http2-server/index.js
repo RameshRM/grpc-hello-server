@@ -1,5 +1,5 @@
 'use strict';
-
+var fs = require('fs');
 var options = {
   key: fs.readFileSync('./certs/localhost.key'),
   cert: fs.readFileSync('./certs/localhost.crt')
